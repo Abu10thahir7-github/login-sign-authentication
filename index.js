@@ -18,7 +18,7 @@ app.use(cors({
     credentials: true
 }));
 app.use(cookieParser());
-app.use('/api/order', orderRoutes)  
+app.use('/api/order', orderRoutes)
 
 mongoose.connect("mongodb://localhost:27017/login-sign")
 .then(console.log("DB connected"))
